@@ -1,0 +1,28 @@
+.um-content {
+  display: flex;
+  justify-content: space-between;
+
+  &__text-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__media-block {
+    width: 60%;
+    height:  36%;
+    >img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}

@@ -1,0 +1,81 @@
+.um-regions {
+  background: #F6F6F6;
+  width: 100vw;
+
+  &__body {
+    display: flex;
+    height: 550px;
+    justify-content: space-between;
+
+    &-text-block {
+      max-width: 450px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  &__addresses {
+    margin-top: 30px;
+    max-width: 100%;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    column-gap: 50px;
+    row-gap: 25px;
+
+    &-more {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+
+      &-link {
+        position: relative;
+      }
+
+      &-link::before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        height: 2px;
+        background: #DC000C;
+        top: 100%;
+        left: 0;
+      }
+    }
+
+    &-block {
+
+    }
+
+    &-city {
+
+    }
+
+    &-rest {
+      margin-top: 8px;
+    }
+
+    &-phone {
+      margin-top: 6px;
+      color: #DC000C;
+    }
+  }
+
+  &__russia {
+    width: 62%;
+    //width: 63%;
+    //padding-top: 40%;
+    position: relative;
+
+    >img {
+      min-width: 1126px;
+      height: 550px;
+      position: absolute;
+      top: 0;
+      //right: -330px;
+    }
+  }
+}

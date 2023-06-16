@@ -1,0 +1,20 @@
+.um-trust {
+  margin: 0 auto 75px;
+  overflow-x: auto;
+
+  &__draggable_area {
+
+    margin-top: 25px;
+    height: 124px;
+    min-width: 1260px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,45 @@
+.um-service {
+  margin-top: 70px;
+
+  &__text {
+    margin-top: 20px;
+    max-width: 984px;
+    width: 100%;
+  }
+
+  &__tape {
+    margin-top: 40px;
+    min-width: 1920px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,minmax(0,1fr));
+
+    &-item {
+      cursor: pointer;
+      width: 384px;
+      height: 208px;
+      background: #252525;
+
+      >img {
+        display: block;
+        height: calc(208px - 48px);
+        width: 100%;
+      }
+
+      &-content {
+        text-transform: uppercase;
+        color: white;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &:hover {
+        background: #DC000C;
+        transform: scale(1.2);
+        transition: .3s ease;
+      }
+    }
+  }
+}

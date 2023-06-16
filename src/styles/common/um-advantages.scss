@@ -1,0 +1,37 @@
+.um-advantages {
+  margin-top: 73px;
+
+  &__body {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    row-gap: 40px;
+    column-gap: 53px;
+
+    &-block {
+      position: relative;
+      height: 168px;
+
+      &-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+        width: 252px;
+        background: #F7F7F7;
+        text-transform: uppercase;
+      }
+
+      &-content {
+        z-index: -1;
+        padding: 20px 23px 0 23px;
+        top: 38px;
+        left: 10px;
+        position: absolute;
+        width: 265px;
+        height: 130px;
+        box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.12);
+      }
+    }
+  }
+}

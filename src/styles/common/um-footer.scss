@@ -1,0 +1,38 @@
+.um-footer {
+  width: 100vw;
+
+  &__top {
+    padding: 35px 0;
+    height: 170px;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 107px;
+
+    >img {
+      width: 150px;
+      height: 40px;
+    }
+
+    &-navigation {
+      display: grid;
+      grid-template-columns: repeat(3,minmax(0,1fr));
+      column-gap: 90px;
+
+      &-item:hover {
+        cursor: pointer;
+        color: #DC000C;
+      }
+    }
+  }
+
+  &__bottom {
+    background: #F7F7F7;
+
+    &-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 48px;
+    }
+  }
+}

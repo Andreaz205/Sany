@@ -1,0 +1,29 @@
+@import "utils/libs";
+@import "utils/fonts";
+
+@import "./common/general.scss";
+@import "./common/um-container.scss";
+@import "./common/um-header.scss";
+@import "./common/um-footer.scss";
+@import "./common/um-btn.scss";
+@import "./common/um-input";
+@import "./common/um-notify";
+@import "./common/um-popup";
+@import "./common/um-overflow";
+@import "./common/um-typography";
+@import "./common/um-preview";
+@import "./common/um-title";
+@import "./common/um-navbar";
+@import "./common/um-content";
+@import "./common/um-form";
+@import "./common/um-top-models";
+@import "./common/um-pagination";
+@import "./common/um-advantages";
+@import "./common/um-equipment";
+@import "./common/um-feedback";
+@import "./common/um-regions";
+@import "./common/um-service";
+@import "./common/um-dealer";
+@import "./common/um-trust";
+
+@import "./ui-kit/ui-kit.scss"; // TODO: Удалить перед сборкой

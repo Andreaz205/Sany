@@ -1,0 +1,28 @@
+.um-pagination {
+  display: flex;
+  justify-content: center;
+
+  &__controls {
+    width: 234px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-arrow {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-page {
+      cursor: pointer;
+      border: 1px solid #7B7B7B;
+      width: 20px;
+
+      &_active {
+        border: 1px solid #DC000C;
+      }
+    }
+  }
+}

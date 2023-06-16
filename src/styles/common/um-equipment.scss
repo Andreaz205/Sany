@@ -1,0 +1,19 @@
+.um-equipment {
+  width: 100vw;
+  margin-top: 80px;
+  background: #F7F7F7;
+  padding: 70px 0 80px;
+
+  &__content {
+    margin-top: 30px;
+
+    &-media-block {
+      min-width: 60%;
+      //padding-top: 50% !important;
+    }
+  }
+
+  &__left-description-block-text {
+    margin-top: 15px;
+  }
+}

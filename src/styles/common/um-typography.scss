@@ -1,0 +1,72 @@
+.um-typography {
+  &_sm {
+    font-style: normal;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    //line-height: 20px;
+    letter-spacing: 0;
+    //text-align: left;
+  }
+
+  &_md {
+    font-style: normal;
+    font-family: Oswald, sans-serif;
+    //line-height: 150%;
+    font-size: 15px;
+    font-weight: 400;
+    //line-height: 23px;
+    letter-spacing: 0;
+    //text-align: left;
+    //color: #252525;
+
+  }
+
+  &_md-roboto {
+    font-style: normal;
+    font-family: Roboto, sans-serif;
+    //line-height: 155%;
+    font-size: 15px;
+    font-weight: 400;
+    //line-height: 23px;
+    letter-spacing: 0;
+    //text-align: left;
+    //color: #252525;
+  }
+
+  &_semilg {
+    font-family: Oswald, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    //line-height: 27px;
+    letter-spacing: 0;
+    //text-align: center;
+  }
+
+  &_lg {
+    font-family: Oswald, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    //line-height: 23px;
+    letter-spacing: 0;
+    //text-align: center;
+  }
+
+  &_xl {
+    font-family: Oswald, sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+    //line-height: 36px;
+    letter-spacing: 0;
+    //text-align: left;
+  }
+
+  &_xxl{
+    font-family: Oswald, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    //line-height: 47px;
+    letter-spacing: 0;
+    //text-align: left;
+  }
+}
