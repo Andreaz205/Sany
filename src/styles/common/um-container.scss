@@ -1,7 +1,8 @@
 .um-container {
-    max-width: calc(1200px + 60px);
+    max-width: calc(1200px + 80px);
     width: 100%;
     margin: 0 auto;
+    padding: 0 10px;
 
     @media (max-width: 768px) {
         padding: 0 15px;

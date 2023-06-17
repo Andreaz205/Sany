@@ -5,6 +5,11 @@
     margin-top: 20px;
     max-width: 984px;
     width: 100%;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 170%;
+    }
   }
 
   &__tape {
@@ -41,5 +46,43 @@
         transition: .3s ease;
       }
     }
+
+    &-mobile {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      row-gap: 10px;
+      align-items: center;
+
+      &-item {
+        padding: 10px 20px;
+        color: white;
+        font-size: 14px;
+        height: 42px;
+        width: 100%;
+        background: #252525;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+
+        &:hover {
+          background: #DC000C;
+        }
+      }
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 40px;
   }
 }

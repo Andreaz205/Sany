@@ -1,4 +1,5 @@
 .um-regions {
+  overflow: hidden;
   background: #F6F6F6;
   width: 100vw;
 
@@ -10,8 +11,20 @@
     &-text-block {
       max-width: 450px;
       display: flex;
-      justify-content: flex-start;
-      align-items: center;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+
+      @media (max-width: 768px) {
+        max-width: none;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      margin-top: 35px;
+      flex-direction: column;
+      height: auto;
     }
   }
 
@@ -62,6 +75,10 @@
       margin-top: 6px;
       color: #DC000C;
     }
+
+    @media (max-width: 768px) {
+      column-gap: 25px;
+    }
   }
 
   &__russia {
@@ -70,12 +87,53 @@
     //padding-top: 40%;
     position: relative;
 
-    >img {
+    &_desktop {
       min-width: 1126px;
-      height: 550px;
       position: absolute;
       top: 0;
-      //right: -330px;
+      left: 0;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &_mobile {
+      //height: 333px;
+      //min-width: 626px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+
+      @media (max-width: 430px) {
+        height: 400px;
+        min-width: 430px;
+      }
+
+      @media (min-width: 430px) and (max-width: 768px) {
+        height: 500px;
+        min-width: 500px;
+      }
+
+      @media (min-width: 520px) and (max-width: 768px) {
+        height: 550px;
+        min-width: 550px;
+      }
+    }
+
+
+    @media (max-width: 768px) {
+      height: 300px;
+      width: 100%;
+    }
+
+    @media (min-width: 430px) and (max-width: 768px) {
+      height: 400px;
     }
   }
 }

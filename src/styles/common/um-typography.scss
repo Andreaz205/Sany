@@ -7,6 +7,10 @@
     //line-height: 20px;
     letter-spacing: 0;
     //text-align: left;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 
   &_md {
@@ -20,6 +24,9 @@
     //text-align: left;
     //color: #252525;
 
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 
   &_md-roboto {
@@ -32,6 +39,10 @@
     letter-spacing: 0;
     //text-align: left;
     //color: #252525;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 
   &_semilg {
@@ -41,6 +52,10 @@
     //line-height: 27px;
     letter-spacing: 0;
     //text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
   }
 
   &_lg {
@@ -50,6 +65,10 @@
     //line-height: 23px;
     letter-spacing: 0;
     //text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
   }
 
   &_xl {
@@ -59,6 +78,10 @@
     //line-height: 36px;
     letter-spacing: 0;
     //text-align: left;
+
+    @media (max-width: 768px) {
+      font-size: 22px;
+    }
   }
 
   &_xxl{
@@ -68,5 +91,9 @@
     //line-height: 47px;
     letter-spacing: 0;
     //text-align: left;
+
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
   }
 }

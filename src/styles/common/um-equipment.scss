@@ -10,10 +10,30 @@
     &-media-block {
       min-width: 60%;
       //padding-top: 50% !important;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
     }
   }
 
-  &__left-description-block-text {
-    margin-top: 15px;
+  &__left-description-block {
+
+    &-text {
+      margin-top: 15px;
+    }
+
+    &-title {
+      @media (max-width: 768px) {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    padding-bottom: 50px;
+    padding-top: 40px;
+    margin-top: 40px;
   }
 }

@@ -3,7 +3,7 @@
   background: #252525;
   height: 200px;
 
-  .um-feedback__body {
+  &__body {
     padding: 34px 0;
     height: 100%;
     display: grid;
@@ -16,6 +16,28 @@
       align-items: flex-start;
       flex-direction: column;
       height: 120px;
+
+      &-ask {
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+
+      &-number {
+        @media (max-width: 768px) {
+          font-size: 22px;
+        }
+      }
+
+      &-phone {
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        height: 85px;
+      }
     }
 
     &-form {
@@ -26,10 +48,27 @@
         display: grid;
         grid-template-columns: repeat(3,minmax(0,1fr));
         grid-row-gap: 15px;
+
+        @media (max-width: 768px) {
+          display: flex;
+          flex-direction: column;
+        }
       }
 
       &-top {
         grid-column: 1/4;
+
+        &-application {
+          text-transform: uppercase;
+        }
+
+        &-manager {
+
+          @media (max-width: 768px) {
+            margin-top: 6px;
+            line-height: 170%;
+          }
+        }
       }
 
       &-input {
@@ -43,6 +82,10 @@
         justify-content: flex-start;
         align-items: center;
         padding: 0 25px;
+
+        @media (max-width: 768px) {
+          width: 100%;
+        }
       }
 
       &-submit {
@@ -53,11 +96,39 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media (max-width: 768px) {
+          width: 100%;
+        }
       }
 
       &-bottom {
         margin-top: 8px;
+
+        @media (max-width: 768px) {
+          margin-top: 12px;
+        }
       }
     }
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+    }
+  }
+
+  &__divder {
+    height: 2px;
+    width: 100%;
+    background: #DC000C;
+    margin: 20px 0;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    height: auto;
   }
 }
