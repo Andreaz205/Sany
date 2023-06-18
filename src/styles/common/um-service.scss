@@ -13,11 +13,13 @@
   }
 
   &__tape {
-    margin-top: 40px;
+    padding: 40px 0;
+    //margin-top: 40px;
     min-width: 1920px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(5,minmax(0,1fr));
+    overflow-x: scroll;
 
     &-item {
       cursor: pointer;
